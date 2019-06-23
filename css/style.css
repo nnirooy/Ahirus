@@ -1,0 +1,219 @@
+/* ------------ youtube.com/CodeExplained ------------ */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #333;    
+    font-family: 'Noto Sans HK', sans-serif;
+        
+    background:repeating-radial-gradient( #2772ff 25%, #c75de2 60%, rgb(255, 92, 92) );
+    background-size: 500% 500%;
+    animation: BackgroundGradient 50s ease infinite;
+
+}
+
+/* ------------ container ------------ */
+.container{
+    padding:10px;
+    width:500px;
+    margin:0 auto;
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 500px;
+    height:150px;
+    /* background-image: url('../img/bg1.jpg'); */
+    
+    /* background:repeating-radial-gradient( #2772ff 25%, #c75de2 60%, rgb(255, 92, 92) );
+    background-size: 500% 500%;
+    animation: BackgroundGradient 50s ease infinite; */
+
+    background-repeat: no-repeat;
+    /* border-radius: 15px 15px 0 0; */
+    position: relative;
+}
+
+@keyframes BackgroundGradient {
+    0% {background-position: 0% 0%;}
+    25% {background-position: 100% 0%}
+    50% {background-position: 100% 100%;}
+    75% {background-position: 0% 100%;}
+    100% {background-position: 0% 0%;}
+}
+
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:15px;
+    top: 20px;
+}
+.clear i{
+    font-size: 25px;
+    color: rgb(255,255,255,0.7);
+}
+.clear i:hover{
+    color: rgb(255,255,255,1);
+    cursor: pointer;
+    /* text-shadow: 1px 3px 5px #000; */
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    color: #FFF;
+    font-size: 23px;
+    font-family: 'Noto Sans HK', sans-serif;
+
+    }
+
+/* ------------ content ------------ */
+.content{
+    /* width:380px;
+    height: 350px; */
+
+    height: 550px;
+    max-height:550px;
+    background-color: #FFF;
+    overflow: auto;
+    border-radius: 5px 5px 0 0; 
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:500px;
+    height: 55px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:15px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+
+.fa-circle-thin{
+
+}
+
+.fa-check-circle{
+    color:#2772ff;
+}
+.item p.text{
+    position: absolute;
+    vertical-align: center;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:11px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    color:#999 ;
+    position: absolute;
+    font-size: 25px;
+    right:25px;
+    top:15px;
+}
+.item i.de:hover{
+    color:rgb(255, 92, 92) ;
+    cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 480px;
+    height:40px;
+    background-color: rgb(255,255,255, .85);
+    padding: 10px;
+    border-radius: 0 0 5px 5px; 
+    /*  border-top: 1px solid rgba(0,0,0,0.1);  */
+}
+
+.add-to-do i{
+    position: absolute;
+    font-size: 30px;
+    color: rgb(0,0,0,0.4);
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.add-to-do input{
+    position: relative;
+    left: 35px;
+    height: 40px;
+    width: 420px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding-left:10px;
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(0,0,0,0.4);
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(0,0,0,0.4);
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(0,0,0,0.4);
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: rgb(0,0,0,0.4);
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
